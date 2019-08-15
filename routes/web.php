@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/carrito', 'ShoppingCartsController@index')->name('shopping_cart.show');
+
+
+Route::resource('productos', 'ProductosController');
+
+Route::resource('in_shopping_carts', 'InShoppingCartsController',[
+	'only'=> ['store','destroy']
+]);
+
+
+//Route::get('/pagar/completar','PaymentsController@execute')->name('payments.execute');
+

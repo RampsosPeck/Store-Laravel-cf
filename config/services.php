@@ -44,4 +44,9 @@ return [
         ],
     ],
 
+    'paypal' => [
+        'clientid' => env('PAYPAL_CLIENT_ID'),
+        'secretid' => env('PAYPAL_CLIENT_SECRET')
+    ]
+
 ];

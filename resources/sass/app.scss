@@ -6,3 +6,40 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.inline-block{
+	display: inline-block;
+}
+.no-margin{
+	margin: 0px;
+}
+.no-padding{
+	padding: 0px;
+}
+.no-transform{
+	text-transform: none;
+}
+.absolute{
+	position: absolute;
+}
+.floating{
+	position: fixed;
+	bottom:2em;
+	right: 2em;
+	z-index: 100;
+}
+.producto{
+	widows: 600px;
+	max-width: 100%;
+	padding: 1em;
+	position: relative;
+	h1{
+		padding-bottom: 10px;
+		border-bottom:solid  1px;
+
+	}
+	.actions{
+		right: 1em;
+		top: 10px;
+	}
+}
